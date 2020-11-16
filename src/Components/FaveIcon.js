@@ -1,12 +1,12 @@
 import React from "react";
 
 const FaveIcon = (props) => {
-  const [Faved, setFaved] = React.useState("😒");
+  const [Faved, setFaved] = React.useState("💔");
   const handleClick = () => {
-    if ("😒") {
-      setFaved("😍");
+    if ("💔") {
+      setFaved("❤️");
     } else {
-      setFaved("😒");
+      setFaved("💔");
     }
   };
   return (

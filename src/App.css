@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&display=swap");
+
 .App {
   text-align: center;
+  font-family: "Big Shoulders Stencil Display", cursive;
 }
 
 .App-logo {
@@ -58,7 +61,8 @@ code {
 h1 {
   text-align: left;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 60px;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -102,6 +106,10 @@ label {
   text-align: center;
 }
 
+#song-list {
+  font-size: 30px;
+}
+
 form {
   margin-top: 30px;
   display: grid;
@@ -128,6 +136,7 @@ form {
   grid-area: title;
   text-transform: uppercase;
   opacity: 0.5;
+  font-size: 40px;
 }
 
 #form-artist {
@@ -141,6 +150,7 @@ form {
   grid-area: artist;
   text-transform: uppercase;
   opacity: 0.5;
+  font-size: 40px;
 }
 
 #form-time {
@@ -155,6 +165,7 @@ form {
   grid-area: time;
   text-transform: uppercase;
   opacity: 0.5;
+  font-size: 40px;
 }
 
 #createButton {

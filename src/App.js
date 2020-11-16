@@ -59,7 +59,7 @@ function App() {
       </header>
 
       <div id="playlist-div">
-        <h1 id="playlist-head">Playlist 1</h1>
+        <h1 id="playlist-head">Playlist</h1>
         <Route
           exact
           path="/"
