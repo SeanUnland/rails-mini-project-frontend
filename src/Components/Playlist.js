@@ -27,7 +27,7 @@ const Playlist = (props) => {
                 className="delete"
                 onClick={() => {
                   props.removeSong(song);
-                  props.history.push("/delete");
+                  props.history.push("/");
                 }}
               >
                 Delete

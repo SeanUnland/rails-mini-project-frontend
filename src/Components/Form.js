@@ -4,8 +4,8 @@ const Form = (props) => {
   const [formData, setFormData] = React.useState(props.song);
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("this if formData:", formData);
+    // event.preventDefault();
+    console.log("this is formData:", formData);
     props.handleSubmit(formData);
     props.history.push("/");
   };
