@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import Playlist from "./Components/Playlist";
 // import Favorites from "./Components/Favorites";
 import Form from "./Components/Form";
@@ -51,7 +51,9 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1 id="head-title">Tunr.</h1>
+        <Link to="/">
+          <h1 id="head-title">Tunr.</h1>
+        </Link>
         <h2 id="head-subtitle">For all your playlist needs</h2>
         <hr id="red-divider" />
       </header>

@@ -19,11 +19,12 @@ const Playlist = (props) => {
                 className="delete"
                 onClick={() => {
                   props.removeSong(song);
-                  props.history.push("/");
+                  props.history.push("/delete");
                 }}
               >
-                X
+                Delete
               </section>
+
               <FaveIcon />
             </article>
           ))}
