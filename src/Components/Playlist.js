@@ -12,9 +12,17 @@ const Playlist = (props) => {
         <div id="song-list">
           {songs.map((song) => (
             <article>
-              <section className="song-title">{song.title}</section>
-              <section>{song.time}</section>
-              <section>{song.artist}</section>
+              <section className="song-title">
+                <span id="title-playlist">Title: </span>
+                {song.title}
+              </section>
+              <section>
+                <span id="artist-playlist">Artist: </span> {song.artist}
+              </section>
+              <section>
+                <span id="time-playlist">Time: </span> {song.time}
+              </section>
+
               <button
                 className="delete"
                 onClick={() => {
