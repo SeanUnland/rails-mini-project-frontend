@@ -51,9 +51,9 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Link to="/">
-          <h1 id="head-title">Tunr.</h1>
-        </Link>
+        {/* <Link to="/"> */}
+        <h1 id="head-title">Tunr.</h1>
+        {/* </Link> */}
         <h2 id="head-subtitle">For all your playlist needs</h2>
         <hr id="red-divider" />
       </header>
