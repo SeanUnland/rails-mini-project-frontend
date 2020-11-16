@@ -90,6 +90,18 @@ label {
   margin-left: 10px;
 }
 
+.delete {
+  background-color: #a93e55;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#faveIcon {
+  text-align: center;
+}
+
 form {
   margin-top: 30px;
   display: grid;

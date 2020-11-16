@@ -15,7 +15,7 @@ const Playlist = (props) => {
               <section className="song-title">{song.title}</section>
               <section>{song.time}</section>
               <section>{song.artist}</section>
-              <section
+              <button
                 className="delete"
                 onClick={() => {
                   props.removeSong(song);
@@ -23,7 +23,7 @@ const Playlist = (props) => {
                 }}
               >
                 Delete
-              </section>
+              </button>
 
               <FaveIcon />
             </article>

@@ -38,7 +38,7 @@ function App() {
   };
 
   const removeSong = (song) => {
-    fetch(url + "/songs/" + song._id, {
+    fetch(url + "/songs/" + song.id, {
       method: "delete",
       headers: {
         "Content-Type": "application/json",
