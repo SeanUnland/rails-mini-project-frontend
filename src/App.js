@@ -44,7 +44,7 @@ function App() {
       method: "put",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(song),
-    }).then((response) => {
+    }).then(() => {
       getSongs();
     });
   };
@@ -115,7 +115,7 @@ function App() {
           <Form
             {...rp}
             label="update"
-            updateSong={updateSong}
+            handleSubmit={updateSong}
             song={selectedSong}
           />
         )}
