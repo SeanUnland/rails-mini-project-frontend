@@ -37,6 +37,16 @@ function App() {
     });
   };
 
+  const updateSong = (song) => {
+    fetch(url + "/songs/" + song.id, {
+      method: "put",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(song),
+    }).then((response) => {
+      getSongs();
+    });
+  };
+
   const removeSong = (song) => {
     fetch(url + "/songs/" + song.id, {
       method: "delete",
@@ -64,7 +74,12 @@ function App() {
           exact
           path="/"
           render={(rp) => (
-            <Playlist {...rp} songs={songs} removeSong={removeSong} />
+            <Playlist
+              {...rp}
+              songs={songs}
+              removeSong={removeSong}
+              updateSong={updateSong}
+            />
           )}
         />
       </div>

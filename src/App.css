@@ -106,6 +106,14 @@ label {
   border-radius: 5px;
 }
 
+.edit {
+  background-color: #a93e55;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 #faveIcon {
   text-align: center;
   font-size: 25px;
