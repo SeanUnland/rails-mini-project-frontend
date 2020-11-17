@@ -44,7 +44,7 @@ function App() {
       method: "put",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(song),
-    }).then(() => {
+    }).then((response) => {
       getSongs();
     });
   };
