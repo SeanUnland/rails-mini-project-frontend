@@ -16,6 +16,8 @@ function App() {
     time: "",
   };
 
+  const [selectedSong, setSelectedSong] = React.useState(emptySong);
+
   const getSongs = () => {
     fetch(url + "/songs/")
       .then((res) => res.json())
@@ -58,6 +60,11 @@ function App() {
     });
   };
 
+  // selects song
+  const selectSong = (song) => {
+    setSelectedSong(song);
+  };
+
   return (
     <div className="App">
       <header>
@@ -78,7 +85,7 @@ function App() {
               {...rp}
               songs={songs}
               removeSong={removeSong}
-              updateSong={updateSong}
+              selectSong={selectSong}
             />
           )}
         />
@@ -96,6 +103,20 @@ function App() {
             label="create"
             song={emptySong}
             handleSubmit={handleCreate}
+            updateSong={updateSong}
+          />
+        )}
+      />
+
+      <Route
+        exact
+        path="/edit"
+        render={(rp) => (
+          <Form
+            {...rp}
+            label="update"
+            updateSong={updateSong}
+            song={selectedSong}
           />
         )}
       />

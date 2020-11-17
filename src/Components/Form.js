@@ -15,7 +15,11 @@ const Form = (props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={() => {
+        handleSubmit();
+      }}
+    >
       <label id="title" for="title">
         Title
       </label>
@@ -58,3 +62,5 @@ const Form = (props) => {
 };
 
 export default Form;
+
+// <form onSubmit={handleSubmit}>

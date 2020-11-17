@@ -32,11 +32,12 @@ const Playlist = (props) => {
               >
                 Delete
               </button>
+
               <button
                 className="edit"
                 onClick={() => {
-                  props.updateSong(song);
-                  props.history.push("/");
+                  props.selectSong(song);
+                  props.history.push("/edit");
                 }}
               >
                 Edit
