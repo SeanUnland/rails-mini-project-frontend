@@ -25,6 +25,7 @@ const Playlist = (props) => {
 
               <button
                 className="delete"
+                // className="fas fa-dumpster"
                 onClick={() => {
                   props.removeSong(song);
                   props.history.push("/");
